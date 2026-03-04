@@ -1,0 +1,50 @@
+{
+    "activities": [
+        {
+            "type": "message",
+            "id": "IBBKm3OWxKK70yRzq4PJpI-as|0000000",
+            "timestamp": "2026-03-04T05:52:54.5402797Z",
+            "serviceUrl": "https://directline.botframework.com/",
+            "channelId": "directline",
+            "from": {
+                "id": "user"
+            },
+            "conversation": {
+                "id": "IBBKm3OWxKK70yRzq4PJpI-as"
+            },
+            "text": "What is your agent name?"
+        },
+        {
+            "type": "message",
+            "id": "IBBKm3OWxKK70yRzq4PJpI-as|0000001",
+            "timestamp": "2026-03-04T05:52:58.4178099Z",
+            "channelId": "directline",
+            "from": {
+                "id": "d43d630b-c685-b825-feef-91bf9f674c14",
+                "name": "Mentor App",
+                "role": "bot"
+            },
+            "conversation": {
+                "id": "IBBKm3OWxKK70yRzq4PJpI-as"
+            },
+            "textFormat": "markdown",
+            "membersAdded": [],
+            "membersRemoved": [],
+            "reactionsAdded": [],
+            "reactionsRemoved": [],
+            "text": "**Agent Name**\n\n- My agent name is not explicitly defined in the available resources. I am an AI agent designed to assist users with their objectives. If you need a specific name or designation, please let me know your preference.",
+            "inputHint": "acceptingInput",
+            "attachments": [],
+            "entities": [],
+            "channelData": {
+                "feedbackLoop": {
+                    "type": "default"
+                }
+            },
+            "replyToId": "IBBKm3OWxKK70yRzq4PJpI-as|0000000",
+            "listenFor": [],
+            "textHighlights": []
+        }
+    ],
+    "watermark": "1"
+}
