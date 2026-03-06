@@ -63,9 +63,27 @@ function sendMessageToCopilot($conversationId, $message, $email, $name, $role)
 
     curl_close($ch);
 
-    return json_decode($response, true);
-}
+    $data = json_decode($response, true);
 
+    /* Detect expired conversation */
+
+    $expired = false;
+
+    if (isset($data['error'])) {
+
+        if (
+            $data['error']['code'] == "ConversationNotFound" ||
+            $data['error']['code'] == "BadArgument"
+        ) {
+            $expired = true;
+        }
+    }
+
+    return [
+        "expired" => $expired,
+        "response" => $data
+    ];
+}
 
 
 function getBotReply($conversationId)
@@ -88,21 +106,54 @@ function getBotReply($conversationId)
     curl_close($ch);
 
     $data = json_decode($response, true);
+    file_put_contents('dl-debug.json', json_encode($data, JSON_PRETTY_PRINT));
 
-    $reply = "";
+    $messages = [];
+    $actions = [];
+    $attachments = [];
 
     if (isset($data['activities'])) {
 
         foreach ($data['activities'] as $activity) {
 
-            if (isset($activity['from']['role']) && $activity['from']['role'] === "bot") {
+            if (($activity['from']['role'] ?? '') === "bot") {
 
-                if (isset($activity['text'])) {
-                    $reply = $activity['text'];
+                /* BOT TEXT */
+
+                if (!empty($activity['text'])) {
+
+                    $messages[] = [
+                        "type" => "text",
+                        "content" => $activity['text']
+                    ];
+                }
+
+                // /* ATTACHMENTS */
+
+                // if (!empty($activity['attachments'])) {
+
+                //     foreach ($activity['attachments'] as $attachment) {
+
+                //         $attachments[] = $attachment;
+                //     }
+                // }
+
+                /* SUGGESTED ACTIONS */
+
+                if (!empty($activity['suggestedActions']['actions'])) {
+
+                    foreach ($activity['suggestedActions']['actions'] as $action) {
+
+                        $actions[] = $action;
+                    }
                 }
             }
         }
     }
 
-    return $reply;
+    return [
+        "messages" => $messages,
+        "actions" => $actions,
+        // "attachments" => $attachments
+    ];
 }
