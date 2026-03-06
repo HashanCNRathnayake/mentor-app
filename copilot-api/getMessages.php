@@ -20,4 +20,22 @@ $response = curl_exec($ch);
 
 curl_close($ch);
 
-echo $response;
+$data = json_decode($response, true);
+
+$reply = "";
+
+if (isset($data['activities'])) {
+
+    foreach ($data['activities'] as $activity) {
+
+        if (isset($activity['from']['role']) && $activity['from']['role'] === "bot") {
+            if (isset($activity['text'])) {
+                $reply = $activity['text'];
+            }
+        }
+    }
+}
+
+echo json_encode([
+    "reply" => $data
+]);

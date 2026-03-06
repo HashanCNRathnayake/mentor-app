@@ -7,14 +7,25 @@ $data = json_decode(file_get_contents("php://input"), true);
 $conversationId = $data['conversationId'];
 $message = $data['message'];
 
+$email = $data['email'];
+$name = $data['name'];
+$role = $data['role'] ?? "user";
+
 $url = DIRECTLINE_ENDPOINT . "/conversations/" . $conversationId . "/activities";
 
 $payload = [
     "type" => "message",
     "from" => [
-        "id" => "user"
+        "id" => $email,
+        "name" => $name
     ],
-    "text" => $message
+    "text" => $message,
+    "channelData" => [
+        "systemActivityFromEmail" => $email,
+        "email" => $email,
+        "name" => $name,
+        "role" => $role
+    ]
 ];
 
 $ch = curl_init($url);

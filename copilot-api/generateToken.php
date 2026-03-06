@@ -2,11 +2,7 @@
 
 require_once "config.php";
 
-$data = json_decode(file_get_contents("php://input"), true);
-
-$token = $data['token'];
-
-$url = DIRECTLINE_ENDPOINT . "/conversations";
+$url = DIRECTLINE_ENDPOINT . "/tokens/generate";
 
 $ch = curl_init($url);
 
@@ -14,7 +10,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 
 $headers = [
-    "Authorization: Bearer " . $token,
+    "Authorization: Bearer " . DIRECTLINE_SECRET,
     "Content-Type: application/json"
 ];
 

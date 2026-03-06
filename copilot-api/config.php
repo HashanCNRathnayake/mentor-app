@@ -7,3 +7,5 @@ $dotenv->load();
 
 define("DIRECTLINE_SECRET", $_ENV['DIRECTLINE_SECRET']);
 define("DIRECTLINE_ENDPOINT", $_ENV['DIRECTLINE_ENDPOINT']);
+
+header("Content-Type: application/json");
