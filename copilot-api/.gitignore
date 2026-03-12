@@ -1,4 +1,26 @@
-.env
-/vendor
 /backups/**
 /backups
+
+# Environment variables
+.env
+
+# Composer dependencies
+/vendor
+
+# Logs
+*.log
+
+# Debug files
+dl-debug.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.cache

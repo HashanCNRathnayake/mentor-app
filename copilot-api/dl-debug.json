@@ -2,8 +2,8 @@
     "activities": [
         {
             "type": "message",
-            "id": "mXRLEMo3lFBxYarm92JmB-as|0000000",
-            "timestamp": "2026-03-06T05:23:51.7232388Z",
+            "id": "FfEeoegnALEIRAU9dmm0ik-as|0000000",
+            "timestamp": "2026-03-12T02:44:32.3014218Z",
             "serviceUrl": "https:\/\/directline.botframework.com\/",
             "channelId": "directline",
             "from": {
@@ -11,7 +11,7 @@
                 "name": "educlaas apps developer 01"
             },
             "conversation": {
-                "id": "mXRLEMo3lFBxYarm92JmB-as"
+                "id": "FfEeoegnALEIRAU9dmm0ik-as"
             },
             "text": "start",
             "channelData": {
@@ -23,8 +23,8 @@
         },
         {
             "type": "message",
-            "id": "mXRLEMo3lFBxYarm92JmB-as|0000001",
-            "timestamp": "2026-03-06T05:23:56.0483936Z",
+            "id": "FfEeoegnALEIRAU9dmm0ik-as|0000001",
+            "timestamp": "2026-03-12T02:44:38.535741Z",
             "channelId": "directline",
             "from": {
                 "id": "1baffb95-4b73-0e26-4ed3-5aa58d391fc5",
@@ -32,7 +32,7 @@
                 "role": "bot"
             },
             "conversation": {
-                "id": "mXRLEMo3lFBxYarm92JmB-as"
+                "id": "FfEeoegnALEIRAU9dmm0ik-as"
             },
             "textFormat": "markdown",
             "membersAdded": [],
@@ -48,14 +48,14 @@
                     "type": "default"
                 }
             },
-            "replyToId": "mXRLEMo3lFBxYarm92JmB-as|0000000",
+            "replyToId": "FfEeoegnALEIRAU9dmm0ik-as|0000000",
             "listenFor": [],
             "textHighlights": []
         },
         {
             "type": "message",
-            "id": "mXRLEMo3lFBxYarm92JmB-as|0000002",
-            "timestamp": "2026-03-06T05:24:07.9376101Z",
+            "id": "FfEeoegnALEIRAU9dmm0ik-as|0000002",
+            "timestamp": "2026-03-12T02:44:52.8302197Z",
             "channelId": "directline",
             "from": {
                 "id": "1baffb95-4b73-0e26-4ed3-5aa58d391fc5",
@@ -63,14 +63,14 @@
                 "role": "bot"
             },
             "conversation": {
-                "id": "mXRLEMo3lFBxYarm92JmB-as"
+                "id": "FfEeoegnALEIRAU9dmm0ik-as"
             },
             "textFormat": "markdown",
             "membersAdded": [],
             "membersRemoved": [],
             "reactionsAdded": [],
             "reactionsRemoved": [],
-            "text": "Let\u2019s get you a snapshot of your learning journey so far.\n\nHi Learner, Educlaas Apps\n\nHere's your learning path for today, 06-March-2026:\n\n<table><thead><tr><th>Learning Session<\/th><th>Duration (Mins)<\/th><\/tr><\/thead><tbody><tr><td>Power BI Formatting, Reports and Dashboards<\/td><td>30<\/td><\/tr><tr><td>Advanced Visualisation and Dashboard Design<\/td><td>30<\/td><\/tr><tr><td>Know How : Power BI Formatting, Reports and Dashboards<\/td><td>10<\/td><\/tr><tr><td>PPT Video - Advanced Visualisation and Dashboard Design<\/td><td>10<\/td><\/tr><tr><td>Building a Cohesive Dashboard for GreenFuture NGO<\/td><td>30<\/td><\/tr><tr><td>Podcast - Advanced Visualisation and Dashboard Design<\/td><td>30<\/td><\/tr><tr><td>Additonal Resource<\/td><td>60<\/td><\/tr><tr><td>Learn more videos<\/td><td>60<\/td><\/tr><tr><td>MCQ 03<\/td><td>15<\/td><\/tr><tr><td>EDUCLaaS Sales Growth Case Study: Formatting, Reports and Dashboards<\/td><td>60<\/td><\/tr><tr><td>Design Power BI reports<\/td><td>120<\/td><\/tr><tr><td>Assignment-03-Enhance Power BI report design<\/td><td>60<\/td><\/tr><\/tbody><\/table>\n\n\n\n\ud83d\udcac Keep going, you're doing great!",
+            "text": "Let\u2019s get you a snapshot of your learning journey so far.\n\nHi Learner, Educlaas Apps\n\nHere's your learning path for today, 12-March-2026:\n\n<table><thead><tr><th>Learning Session<\/th><th>Duration (Mins)<\/th><\/tr><\/thead><tbody><tr><td>Power BI Formatting, Reports and Dashboards<\/td><td>30<\/td><\/tr><tr><td>Advanced Visualisation and Dashboard Design<\/td><td>30<\/td><\/tr><tr><td>Know How : Power BI Formatting, Reports and Dashboards<\/td><td>10<\/td><\/tr><tr><td>PPT Video - Advanced Visualisation and Dashboard Design<\/td><td>10<\/td><\/tr><tr><td>Building a Cohesive Dashboard for GreenFuture NGO<\/td><td>30<\/td><\/tr><tr><td>Podcast - Advanced Visualisation and Dashboard Design<\/td><td>30<\/td><\/tr><tr><td>Additonal Resource<\/td><td>60<\/td><\/tr><tr><td>Learn more videos<\/td><td>60<\/td><\/tr><tr><td>MCQ 03<\/td><td>15<\/td><\/tr><tr><td>EDUCLaaS Sales Growth Case Study: Formatting, Reports and Dashboards<\/td><td>60<\/td><\/tr><tr><td>Design Power BI reports<\/td><td>120<\/td><\/tr><tr><td>Assignment-03-Enhance Power BI report design<\/td><td>60<\/td><\/tr><\/tbody><\/table>\n\n\n\n\ud83d\udcac Keep going, you're doing great!",
             "inputHint": "acceptingInput",
             "attachments": [],
             "entities": [],
@@ -79,14 +79,14 @@
                     "type": "default"
                 }
             },
-            "replyToId": "mXRLEMo3lFBxYarm92JmB-as|0000000",
+            "replyToId": "FfEeoegnALEIRAU9dmm0ik-as|0000000",
             "listenFor": [],
             "textHighlights": []
         },
         {
             "type": "message",
-            "id": "mXRLEMo3lFBxYarm92JmB-as|0000003",
-            "timestamp": "2026-03-06T05:24:15.6088997Z",
+            "id": "FfEeoegnALEIRAU9dmm0ik-as|0000003",
+            "timestamp": "2026-03-12T02:45:04.5804387Z",
             "channelId": "directline",
             "from": {
                 "id": "1baffb95-4b73-0e26-4ed3-5aa58d391fc5",
@@ -94,14 +94,14 @@
                 "role": "bot"
             },
             "conversation": {
-                "id": "mXRLEMo3lFBxYarm92JmB-as"
+                "id": "FfEeoegnALEIRAU9dmm0ik-as"
             },
             "textFormat": "markdown",
             "membersAdded": [],
             "membersRemoved": [],
             "reactionsAdded": [],
             "reactionsRemoved": [],
-            "text": "<h4>Scorecard for AI Model Development<\/h4>\n\n<table><thead><tr><th>IU No<\/th><th>Topic<\/th><th>Instructional Unit<\/th><th>Your Score<\/th><th>Final Score (%)<\/th><th>Grades<\/th><\/tr><\/thead><tbody><tr><td>1<\/td><td>MCQ 01<\/td><td>Introduction to Generative AI<\/td><td>6\/10<\/td><td>60<\/td><td>Not Yet Competent<\/td><\/tr><\/tbody><\/table>\n\n<br\/><br\/><br\/>\n\n<div style=\"margin-bottom: 20px; font-family: Arial, sans-serif; color: #333; line-height: 1.6;\">\n\n  <h3 style=\"color: #4a148c; margin-top: 50px;\">You\u2019re not competent yet in  Introduction to Generative AI . Please review it again to improve your score<\/h3>\n  <p>Generative AI is transforming industries by enabling the creation of new content, ideas, and solutions through advanced machine learning models. Understanding this technology can help you stay ahead in your career by leveraging AI to innovate and improve workflows across various fields.<\/p>\n\n  <h3 style=\"color: #4a148c; margin-top: 20px;\">Here are some LinkedIn Learning courses I\u2019d recommend:<\/h3>\n  <ol style=\"padding-left: 20px;\">\n    <li style=\"margin-bottom: 15px;\">\n      <a href=\"https:\/\/www.linkedin.com\/learning\/what-is-generative-ai?dApp=227779024&leis=LAA\" target=\"_blank\" style=\"color: #2962ff; text-decoration: none; font-weight: bold;\">What Is Generative AI?<\/a><br\/>\n    <\/li>\n    <li style=\"margin-bottom: 15px;\">\n      <a href=\"https:\/\/www.linkedin.com\/learning\/introduction-to-generative-ai-with-gpt?dApp=227779024&leis=LAA\" target=\"_blank\" style=\"color: #2962ff; text-decoration: none; font-weight: bold;\">Introduction to Generative AI with GPT<\/a><br\/>\n    <\/li>\n    <li style=\"margin-bottom: 15px;\">\n      <a href=\"https:\/\/www.linkedin.com\/learning\/introduction-to-generative-ai-genai-in-5g-the-next-wave-of-intelligence?dApp=227779024&leis=LAA\" target=\"_blank\" style=\"color: #2962ff; text-decoration: none; font-weight: bold;\">Introduction to Generative AI (GenAI) in 5G: The Next Wave of Intelligence<\/a><br\/>\n    <\/li>\n  <\/ol>\n<\/div>",
+            "text": "<h4>Scorecard for AI Model Development<\/h4>\n\n<table><thead><tr><th>IU No<\/th><th>Topic<\/th><th>Instructional Unit<\/th><th>Your Score<\/th><th>Final Score (%)<\/th><th>Grades<\/th><\/tr><\/thead><tbody><tr><td>1<\/td><td>MCQ 01<\/td><td>Introduction to Generative AI<\/td><td>6\/10<\/td><td>60<\/td><td>Not Yet Competent<\/td><\/tr><\/tbody><\/table>\n\n<br\/><br\/><br\/>\n\n<div style=\"margin-bottom: 20px; font-family: Arial, sans-serif; color: #333; line-height: 1.6;\">\n\n  <h3 style=\"color: #4a148c; margin-top: 50px;\">You\u2019re not competent yet in  Introduction to Generative AI . Please review it again to improve your score<\/h3>\n  <p>Generative AI is transforming industries by enabling the creation of new content, ideas, and solutions through advanced machine learning models. Understanding this technology can help you stay ahead in your career by leveraging AI to enhance creativity and productivity across various fields.<\/p>\n\n  <h3 style=\"color: #4a148c; margin-top: 20px;\">Here are some LinkedIn Learning courses I\u2019d recommend:<\/h3>\n  <ol style=\"padding-left: 20px;\">\n    <li style=\"margin-bottom: 15px;\">\n      <a href=\"https:\/\/www.linkedin.com\/learning\/what-is-generative-ai?dApp=227779024&leis=LAA\" target=\"_blank\" style=\"color: #2962ff; text-decoration: none; font-weight: bold;\">What Is Generative AI?<\/a><br\/>\n    <\/li>\n    <li style=\"margin-bottom: 15px;\">\n      <a href=\"https:\/\/www.linkedin.com\/learning\/introduction-to-generative-ai-with-gpt?dApp=227779024&leis=LAA\" target=\"_blank\" style=\"color: #2962ff; text-decoration: none; font-weight: bold;\">Introduction to Generative AI with GPT<\/a><br\/>\n    <\/li>\n    <li style=\"margin-bottom: 15px;\">\n      <a href=\"https:\/\/www.linkedin.com\/learning\/introduction-to-generative-ai-genai-in-5g-the-next-wave-of-intelligence?dApp=227779024&leis=LAA\" target=\"_blank\" style=\"color: #2962ff; text-decoration: none; font-weight: bold;\">Introduction to Generative AI (GenAI) in 5G: The Next Wave of Intelligence<\/a><br\/>\n    <\/li>\n  <\/ol>\n<\/div>",
             "inputHint": "acceptingInput",
             "attachments": [],
             "entities": [],
@@ -110,14 +110,14 @@
                     "type": "default"
                 }
             },
-            "replyToId": "mXRLEMo3lFBxYarm92JmB-as|0000000",
+            "replyToId": "FfEeoegnALEIRAU9dmm0ik-as|0000000",
             "listenFor": [],
             "textHighlights": []
         },
         {
             "type": "message",
-            "id": "mXRLEMo3lFBxYarm92JmB-as|0000004",
-            "timestamp": "2026-03-06T05:24:15.8791974Z",
+            "id": "FfEeoegnALEIRAU9dmm0ik-as|0000004",
+            "timestamp": "2026-03-12T02:45:04.885432Z",
             "channelId": "directline",
             "from": {
                 "id": "1baffb95-4b73-0e26-4ed3-5aa58d391fc5",
@@ -125,7 +125,7 @@
                 "role": "bot"
             },
             "conversation": {
-                "id": "mXRLEMo3lFBxYarm92JmB-as"
+                "id": "FfEeoegnALEIRAU9dmm0ik-as"
             },
             "membersAdded": [],
             "membersRemoved": [],
@@ -174,14 +174,14 @@
                     "type": "default"
                 }
             },
-            "replyToId": "mXRLEMo3lFBxYarm92JmB-as|0000000",
+            "replyToId": "FfEeoegnALEIRAU9dmm0ik-as|0000000",
             "listenFor": [],
             "textHighlights": []
         },
         {
             "type": "message",
-            "id": "mXRLEMo3lFBxYarm92JmB-as|0000005",
-            "timestamp": "2026-03-06T05:24:24.9651659Z",
+            "id": "FfEeoegnALEIRAU9dmm0ik-as|0000005",
+            "timestamp": "2026-03-12T02:51:14.7571414Z",
             "serviceUrl": "https:\/\/directline.botframework.com\/",
             "channelId": "directline",
             "from": {
@@ -189,7 +189,7 @@
                 "name": "educlaas apps developer 01"
             },
             "conversation": {
-                "id": "mXRLEMo3lFBxYarm92JmB-as"
+                "id": "FfEeoegnALEIRAU9dmm0ik-as"
             },
             "text": "start",
             "channelData": {

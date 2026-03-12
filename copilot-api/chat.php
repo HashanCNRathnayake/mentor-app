@@ -11,6 +11,7 @@ $name = $data['name'];
 $role = $data['role'] ?? "user";
 
 $conversationId = $data['conversationId'] ?? null;
+$isNewConversation = !$conversationId;
 
 
 /* -----------------------------
