@@ -11,20 +11,27 @@ $name = $data['name'];
 $role = $data['role'] ?? "user";
 
 $conversationId = $data['conversationId'] ?? null;
-$isNewConversation = !$conversationId;
-
 
 /* -----------------------------
-Create conversation if needed
+Handle NEW conversation start
 ------------------------------*/
 
 if (!$conversationId) {
 
-    $conversation = createConversation();
+    $result = startConversationFlow($email, $name, $role);
 
-    $conversationId = $conversation['conversationId'];
+    echo json_encode([
+        "conversationId" => $result['conversationId'],
+        "messages" => $result['reply']['messages'],
+        "actions" => $result['reply']['actions']
+    ]);
+
+    exit;
 }
 
+/* -----------------------------
+Create conversation if needed
+------------------------------*/
 
 /* -----------------------------
 Send message to Copilot
@@ -42,43 +49,29 @@ $result = sendMessageToCopilot(
 
 if ($result['expired']) {
 
-    $conversation = createConversation();
+    $result = startConversationFlow($email, $name, $role);
 
-    $conversationId = $conversation['conversationId'];
+    echo json_encode([
+        "conversationId" => $result['conversationId'],
+        "messages" => $result['reply']['messages'],
+        "actions" => $result['reply']['actions']
+    ]);
 
-    sendMessageToCopilot(
-        $conversationId,
-        $message,
-        $email,
-        $name,
-        $role
-    );
+    exit;
 }
-
 
 /* wait for bot response */
 
-sleep(2);
-
-
-/* -----------------------------
-Get all bot responses
-------------------------------*/
-
+// $response = waitForBotMessages($conversationId);
 $response = getBotReply($conversationId);
-
 
 /* -----------------------------
 Return structured response
 ------------------------------*/
 
 echo json_encode([
-
     "conversationId" => $conversationId,
-
     "messages" => $response['messages'],
-
     "actions" => $response['actions']
-
     // "attachments" => $response['attachments']
 ]);

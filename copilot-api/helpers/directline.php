@@ -20,9 +20,9 @@ function createConversation()
 
     $url = DIRECTLINE_ENDPOINT . "/conversations";
 
-    logRaw("REQUEST_CREATE_CONVERSATION", [
-        "url" => $url
-    ]);
+    // logRaw("REQUEST_CREATE_CONVERSATION", [
+    //     "url" => $url
+    // ]);
 
 
     $ch = curl_init($url);
@@ -39,7 +39,7 @@ function createConversation()
 
     $response = curl_exec($ch);
 
-    logRaw("RESPONSE_CREATE_CONVERSATION", $response);
+    // logRaw("RESPONSE_CREATE_CONVERSATION", $response);
 
 
     curl_close($ch);
@@ -48,10 +48,8 @@ function createConversation()
 }
 
 
-
 function sendMessageToCopilot($conversationId, $message, $email, $name, $role)
 {
-
     $url = DIRECTLINE_ENDPOINT . "/conversations/" . $conversationId . "/activities";
 
     $payload = [
@@ -88,7 +86,7 @@ function sendMessageToCopilot($conversationId, $message, $email, $name, $role)
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
 
     $response = curl_exec($ch);
-    logRaw("RESPONSE_SEND_MESSAGE", $response);
+    // logRaw("RESPONSE_SEND_MESSAGE", $response);
 
     curl_close($ch);
 
@@ -97,7 +95,7 @@ function sendMessageToCopilot($conversationId, $message, $email, $name, $role)
     /* Detect expired conversation */
 
 
-    logRaw("RESPONSE_SEND_MESSAGE_data", $data);
+    // logRaw("RESPONSE_SEND_MESSAGE_data", $data);
 
     $expired = false;
 
@@ -123,9 +121,9 @@ function getBotReply($conversationId)
 
     $url = DIRECTLINE_ENDPOINT . "/conversations/" . $conversationId . "/activities";
 
-    logRaw("REQUEST_GET_REPLY", [
-        "url" => $url
-    ]);
+    // logRaw("REQUEST_GET_REPLY", [
+    //     "url" => $url
+    // ]);
 
     $ch = curl_init($url);
 
@@ -139,12 +137,14 @@ function getBotReply($conversationId)
 
     $response = curl_exec($ch);
 
-    logRaw("RESPONSE_GET_REPLY", $response);
 
     curl_close($ch);
 
     $data = json_decode($response, true);
-    file_put_contents('dl-debug.json', json_encode($data, JSON_PRETTY_PRINT));
+
+    // logRaw("RESPONSE_GET_REPLY_data", $data);
+
+    // file_put_contents('dl-debug.json', json_encode($data, JSON_PRETTY_PRINT));
 
     $messages = [];
     $actions = [];
@@ -176,6 +176,11 @@ function getBotReply($conversationId)
             }
         }
     }
+
+    logRaw("msg", $messages);
+    logRaw("actions", $actions);
+
+
 
     return [
         "messages" => $messages,
@@ -220,7 +225,12 @@ function startConversationFlow($email, $name, $role)
     /* STEP 1 — create conversation */
 
     $conv = createConversation();
-    $conversationId = $conv['conversationId'] ?? null;
+    // logRaw("createConversation_res", $conv);
+
+
+    $conversationId = $conv['data']['conversationId'];
+
+    logRaw("conversationId", $conversationId);
 
     if (!$conversationId) {
         return ["error" => "Conversation creation failed"];
@@ -238,7 +248,7 @@ function startConversationFlow($email, $name, $role)
 
     /* STEP 3 — wait for bot messages (ignore them) */
 
-    waitForBotMessages($conversationId);
+    // waitForBotMessages($conversationId);
 
     /* STEP 4 — send second start */
 
@@ -252,7 +262,7 @@ function startConversationFlow($email, $name, $role)
 
     /* STEP 5 — get the real response */
 
-    $reply = waitForBotMessages($conversationId);
+    $reply = getBotReply($conversationId);
 
     return [
         "conversationId" => $conversationId,
